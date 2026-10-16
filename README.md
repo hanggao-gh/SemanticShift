@@ -68,7 +68,6 @@ See:
 Environment variables commonly used:
 - `OPENAI_API_KEY` — required if you use OpenAI embeddings.
 - `QDRANT_URL`, `QDRANT_API_KEY` — for hosted Qdrant (optional).
-- `HF_ENDPOINT` — some scripts set a HF mirror; you may remove/override it if not needed.
 
 ## Reproducibility tips
 
