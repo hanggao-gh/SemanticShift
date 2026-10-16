@@ -1,0 +1,5 @@
+ruff>=0.6
+black>=24.0
+pytest>=8.0
+mypy>=1.8
+pre-commit>=3.6

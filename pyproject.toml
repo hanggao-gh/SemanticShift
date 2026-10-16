@@ -1,0 +1,46 @@
+[project]
+name = "semantic-shift"
+version = "0.1.0"
+description = "Research code for semantic shift / embedding-geometry analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Semantic Shift Contributors"}]
+
+# The code in this repository is primarily executed as scripts via `python -m src.<module>`.
+# We keep dependencies here to support modern tooling, but a plain `requirements.txt` is also provided.
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "scikit-learn>=1.3",
+  "scipy>=1.10",
+  "tqdm>=4.66",
+  "requests>=2.31",
+  "datasets>=2.16",
+  "nltk>=3.8",
+  "sentence-transformers>=2.6",
+  "qdrant-client>=1.7",
+  "llama-index-core>=0.10",
+  "llama-index-embeddings-huggingface>=0.2",
+  "openai>=1.30",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.6",
+  "black>=24.0",
+  "pytest>=8.0",
+  "mypy>=1.8",
+  "pre-commit>=3.6",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
